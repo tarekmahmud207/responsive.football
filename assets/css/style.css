@@ -68,7 +68,9 @@ a {
 .welcome-title a.custom-btn:hover {
     animation-name: mymove;
 }
-.welcome-title, .highlight-details .fas {
+/* custom-btn */
+.welcome-title .fas,
+.highlight-details .fas {
     margin-left: 12px;
 }
 .welcome-image-inner img {
@@ -87,6 +89,7 @@ a {
     background-color: #ffffff;
 }
 .players-area {
+    width: 1050px;
     background-color: #f3f3f3;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     display: grid;
@@ -112,6 +115,7 @@ a {
     display: flex;
     align-items: center;
     margin-top: 200px;
+    padding-bottom: 150px;
 }
 .highlight-details {
     width: 50%;
@@ -125,7 +129,7 @@ a {
 }
 .highlight-details h2 {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .highlight-details p {
     width: 404px;
@@ -137,8 +141,22 @@ a {
 
 
 
+/* ===================================
+    Footer
+=========================================*/
+footer{
+    text-align: center;
+    padding-bottom: 63px;
+}
+.footer-logo img {
+    width: 35%;
+}
+.footer-social-icon {
+    margin-bottom: 20px;
+}
+.footer-social-icon .fab {
+    color: #969BAB;
+    margin-right: 14px;
 
-
-
-
+}
 
