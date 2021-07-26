@@ -29,7 +29,15 @@ a {
 .custom-btn:hover {
     background-color: #3DBAFD;
 }
-
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #505050;
+}
 
 
 /*==================================    
@@ -51,23 +59,27 @@ a {
     font-weight: bold;
     color: #ffffff;
 }
-.welcome-title a.custom-btn {
+.welcome-title a.custom-btn,
+.highlight-details a.custom-btn {
     margin-top: 36px;
     display: inline-block;
-    animation-name: mymove;
-    animation-duration: 4s;
+    padding-right: 30px;
 }
-@keyframes mymove {
-    form {
-        margin-left: 20px;
+.welcome-title a.custom-btn .fas,
+.highlight-details a.custom-btn .fas {
+    animation: move 1s infinite ease-in-out alternate;
+}
+@keyframes move {
+   
+    from {
+        transform: translateX(0px);
     }
     to {
-        margin-left: 40px;
+        transform: translateX(10px);
     }
+    
 }
-.welcome-title a.custom-btn:hover {
-    animation-name: mymove;
-}
+
 /* custom-btn */
 .welcome-title .fas,
 .highlight-details .fas {
@@ -127,10 +139,6 @@ a {
 .highlight-image img {
     width: 100%;
 }
-.highlight-details h2 {
-    font-size: 48px;
-    font-weight: 700;
-}
 .highlight-details p {
     width: 404px;
     margin-bottom:  24px;
@@ -186,3 +194,125 @@ footer{
 /* @media screen and (min-width:768px) and (max-width:1023px) {
    
 } */
+
+
+
+
+
+
+
+
+
+
+
+.ac-groups-rows {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+.ac-gamerow {
+    margin-bottom: 60px;
+}
+.ac-gamerow-header {
+    color: #fff;
+}
+.ac-gamerow-events {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgb(44 62 80 / 50%);
+}
+.fa-arrow-right:before {
+    content: "\f061";
+}
+.ac-gamerow-teams {
+    width: 100%;
+}
+.ac-gamerow-info {
+    display: flex;
+    justify-content: center;
+    min-height: 72px;
+}
+.ac-gamerow-venue-info {
+    width: 33%;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Ubuntu,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #969696;
+}
+.ac-gamerow-venue-description {
+    color: #6f6f6f;
+    font-size: 18px;
+    width: 250px;
+}
+.ac-gamerow-venue-description {
+    color: #6f6f6f;
+    font-size: 18px;
+    width: 250px;
+}
+.ac-gamerow-info-teams {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ac-gamerow-flag {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+}
+.ac-gamerow-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}.ac-gamerow-flag {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+}
+.ac-gamerow-space {
+    width: 33%;
+}
+.ac-gamerow-score-container {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.ac-gamerow-score-status {
+    color: #b1b1b1;
+    font-size: 12px;
+    font-family: Ubuntu,Arial,sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.ac-gamerow-score-divider, .ac-gamerow-score-home, .ac-gamerow-score-visitor {
+    color: #b1b1b1;
+    font-size: 60px;
+    font-family: Ubuntu,Arial,sans-serif;
+}
+.ac-gamerow-score-divider, .ac-gamerow-score-home, .ac-gamerow-score-visitor {
+    color: #b1b1b1;
+    font-size: 60px;
+    font-family: Ubuntu,Arial,sans-serif;
+}
+.ac-gamerow-score-divider, .ac-gamerow-score-home, .ac-gamerow-score-visitor {
+    color: #b1b1b1;
+    font-size: 60px;
+    font-family: Ubuntu,Arial,sans-serif;
+}
