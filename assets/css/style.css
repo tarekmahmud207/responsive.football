@@ -51,6 +51,7 @@ h3 {
     background-color: #2d25a0;
     padding: 85px;
     display: flex;
+    align-items: center;
 }
 .welcome-title {
     width: 50%;
@@ -63,8 +64,10 @@ h3 {
     font-weight: bold;
     color: #ffffff;
 }
-.welcome-title a.custom-btn,
-.highlight-details a.custom-btn {
+.welcome-title h1 span {
+    display: inline-block;
+}
+.welcome-title a.custom-btn {
     margin-top: 36px;
     display: inline-block;
     padding-right: 30px;
@@ -135,7 +138,7 @@ h3 {
 }
 .highlight-details {
     width: 50%;
-    padding-right: 68px;
+    padding-right: 50px;
 }
 .highlight-image {
     width: 50%;
@@ -300,7 +303,7 @@ footer{
 
 @media screen and (min-width:768px) and (max-width:1023px) {
    .welcome-title h1 {
-       font-size: 48px;
+       font-size: 38px;
    }
    .players-area {
        width: 80%;
@@ -310,18 +313,24 @@ footer{
        width: 100%;
    }
    .highlight-details p{
-       overflow: hidden;
-       width: 70%;
+       width: 100%;
+   }
+   .highlight-details p span {
+       display: none;
    }
    .highlight-details h2{
-       font-size: 28px;
+       font-size: 24px;
    }
-   .welcome-title a.custom-btn, 
+   .welcome-title a.custom-btn {
+       margin-top: 24px;
+   }
    .highlight-details a.custom-btn {
        margin-top: 0;
    }
    .highlight-area {
        width: 80%;
+       margin: 0 auto;
+       align-items: normal;
    }
    .ac-gamerow-info {
        flex-direction: column;
@@ -341,7 +350,7 @@ footer{
     height: 65px;
     }
    footer{
-       height: 800px;
+       height: 900px;
    }
 }
 
@@ -355,7 +364,7 @@ footer{
     .welcome-section {
         flex-direction: column;
         align-items: center;
-        padding: 0px 15px;
+        padding: 50px 15px;
     }
     .welcome-title,
     .welcome-image {
