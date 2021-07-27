@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -37,6 +38,9 @@ h3 {
     font-size: 24px;
     font-weight: 700;
     color: #505050;
+}
+.ptb {
+    padding: 100px 0;
 }
 
 
@@ -123,11 +127,11 @@ h3 {
 /* =====================================
     highlight-section
 =========================================*/
-.highlight-section {
+.highlight-area {
     display: flex;
     align-items: center;
     margin-top: 200px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 .highlight-details {
     width: 50%;
@@ -138,80 +142,22 @@ h3 {
 }
 .highlight-image img {
     width: 100%;
+    border-radius: 5px;
 }
-.highlight-details p {
+.highlight-details > p {
     width: 404px;
     margin-bottom:  24px;
 }
 
 
-/* ==========================================
-    client-section
-================================================= */
-.client-section {
-   text-align: center;
-   margin-bottom: 200px;
-}
-.client-section a {
-    padding: 10px;
-    margin: 0px 10px;
-}
-.client-section img {
-    width: 100px;
-    height: 100px;
-}
 
-
-/* ===================================
-    Footer
-=========================================*/
-footer{
-    text-align: center;
-    padding-bottom: 63px;
-    background-color: #f3f3f3;
-}
-.footer-logo img {
-    width: 35%;
-}
-.footer-social-icon {
-    margin-bottom: 20px;
-}
-.footer-social-icon .fab {
-    color: #969BAB;
-    margin-right: 14px;
-
-}
-
-
-
-
-
-
-/* ==================================================
-    Responsive Design
-=====================================================*/
-
-/* @media screen and (min-width:768px) and (max-width:1023px) {
-   
-} */
-
-
-
-
-
-
-
-
-
-
-
+/* =============================================
+    match-section
+=================================================*/
 .ac-groups-rows {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 60px;
-}
-*, :after, :before {
-    box-sizing: inherit;
 }
 .ac-gamerow {
     margin-bottom: 60px;
@@ -243,7 +189,6 @@ footer{
     font-size: 22px;
     font-weight: 700;
     text-decoration: none;
-    font-family: Ubuntu,Arial,sans-serif;
     text-transform: uppercase;
     color: #969696;
 }
@@ -275,13 +220,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-}.ac-gamerow-flag {
-    width: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 50px;
 }
 .ac-gamerow-space {
     width: 33%;
@@ -297,22 +235,214 @@ footer{
 .ac-gamerow-score-status {
     color: #b1b1b1;
     font-size: 12px;
-    font-family: Ubuntu,Arial,sans-serif;
     text-transform: uppercase;
     margin-top: 15px;
 }
-.ac-gamerow-score-divider, .ac-gamerow-score-home, .ac-gamerow-score-visitor {
+
+.ac-gamerow-score-divider, 
+.ac-gamerow-score-home, 
+.ac-gamerow-score-visitor {
     color: #b1b1b1;
     font-size: 60px;
-    font-family: Ubuntu,Arial,sans-serif;
+    
 }
-.ac-gamerow-score-divider, .ac-gamerow-score-home, .ac-gamerow-score-visitor {
-    color: #b1b1b1;
-    font-size: 60px;
-    font-family: Ubuntu,Arial,sans-serif;
+
+
+
+
+
+
+/* ==========================================
+    client-section
+================================================= */
+.client-section {
+   text-align: center;
+   padding: 100px 0px;
+   background-color: #f3f3f3;
 }
-.ac-gamerow-score-divider, .ac-gamerow-score-home, .ac-gamerow-score-visitor {
-    color: #b1b1b1;
-    font-size: 60px;
-    font-family: Ubuntu,Arial,sans-serif;
+.client-section a {
+    padding: 10px;
+    margin: 0px 10px;
 }
+.client-section img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ===================================
+    Footer
+=========================================*/
+footer{
+    text-align: center;
+    padding-bottom: 63px;
+}
+.footer-logo img {
+    width: 35%;
+}
+.footer-social-icon {
+    margin-bottom: 20px;
+}
+.footer-social-icon .fab {
+    color: #969BAB;
+    margin-right: 14px;
+
+}
+
+
+
+
+
+
+/* ==================================================
+    Responsive Design
+=====================================================*/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+   .welcome-title h1 {
+       font-size: 48px;
+   }
+   .players-area {
+       width: 80%;
+       grid-template-columns: repeat(2, 1fr);
+   }
+   .container {
+       width: 100%;
+   }
+   .highlight-details p{
+       overflow: hidden;
+       width: 70%;
+   }
+   .highlight-details h2{
+       font-size: 28px;
+   }
+   .welcome-title a.custom-btn, 
+   .highlight-details a.custom-btn {
+       margin-top: 0;
+   }
+   .highlight-area {
+       width: 80%;
+   }
+   .ac-gamerow-info {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+   }
+   .match-section h2,
+   .match-section h3 {
+       margin-left: 10%;
+   }
+   .ac-gamerow-score {
+       margin: 0 30px;
+   }
+   
+    .client-section img {
+    width: 65px;
+    height: 65px;
+    }
+   footer{
+       height: 800px;
+   }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        width: 100%;
+    }
+    .ptb {
+        padding: 50px 0;
+    }
+    .welcome-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 15px;
+    }
+    .welcome-title,
+    .welcome-image {
+        width: 100%;
+    }
+    .highlight-details a.custom-btn {
+        margin-top: 0;
+    }
+    .welcome-image {
+        margin-top: 50px;
+    }
+    .welcome-title h1 {
+        font-size: 36px;
+        width: 278px;
+    }
+    .players-area {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight-area {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .highlight-details h2 {
+        font-size: 30px;
+    }
+    .highlight-details,
+    .highlight-image {
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .highlight-details p {
+        width: 100%;
+    }
+    .highlight-image {
+        margin-top: 50px;
+    }
+    .match-heading {
+        text-align: center;
+        font-size: 38px;
+    }
+    .mt-custom {
+        font-size: 26px;
+    }
+    .ac-gamerow-venue-description  {
+        text-align: center;
+    }
+    .ac-gamerow-img {
+        width: 50px;
+        height: 50px;
+    }
+    .ac-gamerow-score-home,
+    .ac-gamerow-score-divider,
+    .ac-gamerow-score-visitor {
+        font-size: 30px;
+    }
+    .ac-gamerow-info {
+        flex-direction: column;
+    }
+    .ac-gamerow-score-container {
+        width: 80px;
+    }
+    .ac-gamerow-info-teams {
+        width: 100%;
+    }
+    .client-area {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-line-client-logo,
+    .middle-line-client-logo,
+    .bottom-line-client-logo {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        height: 450px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
